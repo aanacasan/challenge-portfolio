@@ -1,0 +1,167 @@
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 80px; 
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+
+.apresentacao__foto {
+    width: 200px;
+    border-radius: 100%;
+    float: left;
+    margin-left: 20px;
+
+}
+
+.apresentacao__titulo {
+    display:flex;
+    margin: 16px 16px;
+    padding: 0 40px;
+    
+}
+
+.apresentacao__subtitulo {
+    display: flex;
+    margin: 16px 16px;
+    padding: 0 40px 16px;
+    
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: left;
+    gap: 50px; 
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies__lista {
+    display: flex;
+    justify-content: left;
+    gap: 50px;    
+}
+
+.hobbies__icone {
+    width: 50px;
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    gap: 50px;
+}
+
+.formacao__icone {
+    width: 80px;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+}
+
+.contato__imagem {
+    width: 90px;
+    border-radius: 20px;
+}
+
+.contato__formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contato__campo {
+    border: 2px solid #df09f7;
+    color: #4c81e2;    
+}
+
+.contato__botao {
+    background-color: #96b0e1;
+    color: #df09f7;
+    border-radius: 10px;
+    width: 60px;
+}
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
